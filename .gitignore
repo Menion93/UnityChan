@@ -16,6 +16,8 @@
 [Oo]bj/
 [Bb]uild
 /[Ll]ibrary/
+CharacterMovement/[Ll]ibrary/
+ATB/[Ll]ibrary/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
