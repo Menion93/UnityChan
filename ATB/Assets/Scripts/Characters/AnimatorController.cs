@@ -35,10 +35,10 @@ public class AnimatorController : MonoBehaviour
         healthAnimVar = "Health";
 }
 
-    // Disable the bool variable in the next frame (30fps)
+    // Disable the bool variable in the next 4 frames (30fps)
     protected IEnumerator DisableBoolNextFrame(string animParameter)
     {
-        yield return new WaitForSeconds(0.033f);
+        yield return new WaitForSeconds(0.1f);
 
         animator.SetBool(animParameter, false);
     }
