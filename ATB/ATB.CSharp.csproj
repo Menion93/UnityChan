@@ -75,11 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayAgainCanvas.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\BackAfterAttackBehavior.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\JumpToAttackBehavior.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\NormalAttackBehavior.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\SpecialAttackBehavior.cs" />
+    <Compile Include="Assets\Scripts\AnimatorBehavior\StandardBehavior.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\TaichiBehavior\HadokenBehavior.cs" />
     <Compile Include="Assets\Scripts\AnimatorBehavior\TargetReadyBehavior.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Menu\MenuFields\OptionFields\MenuField.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuFields\OptionFields\QuitField.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuFields\OptionFields\SpecialMenuField.cs" />
+    <Compile Include="Assets\Scripts\Menu\PlayAgainCanvas.cs" />
     <Compile Include="Assets\Scripts\Menu\SelectionMenu\AttackSelection.cs" />
     <Compile Include="Assets\Scripts\Menu\SelectionMenu\CharacterSelection.cs" />
     <Compile Include="Assets\Scripts\Menu\SelectionMenu\IATBMenu.cs" />

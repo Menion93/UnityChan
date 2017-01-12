@@ -7,6 +7,7 @@ public class NormalAttackBehavior : StateMachineBehaviour {
     AudioManager audioManager;
 
     ATBController enemy;
+    AnimatorController animController;
 
     public float offsetTimeHit;
     float timeOfStart;
@@ -30,6 +31,9 @@ public class NormalAttackBehavior : StateMachineBehaviour {
         if(!audioManager)
             audioManager = GameObject.FindGameObjectWithTag(Tag.AudioManager).GetComponent<AudioManager>();
 
+        if (!animController)
+            animController = animator.GetComponent<AnimatorController>();
+
         audioManager.haa.Play();
     }
 
@@ -40,7 +44,8 @@ public class NormalAttackBehavior : StateMachineBehaviour {
         {
             hitted = true;
             enemy.Damage(damage);
+            animator.SetBool(animController.selectedAttack, false);
         }
-	}
+    }
 
 }

@@ -11,26 +11,26 @@ public class TaichiAnimatorController : AnimatorController {
     // Raise the guard
     public override void OnGuard()
     {
-        AnimatorSetBool(onGuardAnimVar, true);
+        animator.SetBool(onGuardAnimVar, true);
     }
 
     // Fall down to the earth
     public void GoDown()
     {
-        AnimatorSetBool(downAnimVar, true);
+        animator.SetBool(downAnimVar, true);
     }
 
     // Fall down to the earth and do not get up
     public override void GoKO()
     {
         base.GoKO();
-        AnimatorSetBool(downAnimVar, true);
+        animator.SetBool(downAnimVar, true);
     }
 
     // Get hitted by a simple attack
     public override void Hitted()
     {
-        AnimatorSetBool(hittedAnimVar, true);
+        animator.SetBool(hittedAnimVar, true);
     }
         
 }

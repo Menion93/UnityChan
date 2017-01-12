@@ -7,6 +7,7 @@ public class SpecialAttackBehavior : StateMachineBehaviour {
     AudioManager audioManager;
 
     ATBController enemy;
+    AnimatorController animController;
 
     public float offsetTimeHit;
     float timeOfStart;
@@ -30,6 +31,9 @@ public class SpecialAttackBehavior : StateMachineBehaviour {
         if(!audioManager)
             audioManager = GameObject.FindGameObjectWithTag(Tag.AudioManager).GetComponent<AudioManager>();
 
+        if (!animController)
+            animController = animator.GetComponent<AnimatorController>();
+
         audioManager.shoryuken.Play();
     }
 
@@ -40,6 +44,7 @@ public class SpecialAttackBehavior : StateMachineBehaviour {
         {
             hitted = true;
             enemy.HeavyDamage(damage);
+            animator.SetBool(animController.selectedAttack, false);
         }
     }
 

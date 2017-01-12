@@ -43,8 +43,8 @@ public class BackAfterAttackBehavior : StateMachineBehaviour {
 
             if (alpha >= 1)
             {
-                animController.AnimatorSetBool(idleAnimVar, true);
                 tick = false;
+                animator.SetBool(idleAnimVar, true);
             }
         }
         

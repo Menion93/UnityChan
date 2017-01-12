@@ -35,22 +35,6 @@ public class AnimatorController : MonoBehaviour
         healthAnimVar = "Health";
 }
 
-    // Disable the bool variable in the next 4 frames (30fps)
-    protected IEnumerator DisableBoolNextFrame(string animParameter)
-    {
-        yield return new WaitForSeconds(0.1f);
-
-        animator.SetBool(animParameter, false);
-    }
-
-    // This method will set the animator parameter as true or false, if true then it will disactivate it next frame (33ms)
-    public void AnimatorSetBool(string variabile, bool value)
-    {
-        animator.SetBool(variabile, value);
-
-        if (value)
-            StartCoroutine(DisableBoolNextFrame(variabile));
-    }
 
     // Interface to start a melee attack
     public void StartAttack(string attack, Transform enemyPosition, float offset)

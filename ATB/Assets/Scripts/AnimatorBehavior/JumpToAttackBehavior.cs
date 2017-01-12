@@ -39,7 +39,7 @@ public class JumpToAttackBehavior : StateMachineBehaviour {
             {
                 tick = false;
                 animator.SetBool(animController.jumpToAttackAnimVar, false);
-                animController.AnimatorSetBool(animController.selectedAttack, true);
+                animator.SetBool(animController.selectedAttack, true);
             }
         }
     }
