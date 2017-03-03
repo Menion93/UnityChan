@@ -21,6 +21,10 @@ ATB/[Ll]ibrary/
 sysinfo.txt
 *.stackdump
 /Assets/AssetStoreTools*
+/*/[Ll]ibrary/
+*/Library/
+ShaderProject/Assets/Particle Dynamics Magic
+
  
 # ============================================= #
 # Visual Studio / MonoDevelop / Rider generated #
@@ -53,3 +57,4 @@ ehthumbs.db
 
 Assets/Plugins/Android/libs/x86/libgpg.so.meta
 Assets/Plugins/Android/libs/armeabi-v7a/libgpg.so.meta
+
